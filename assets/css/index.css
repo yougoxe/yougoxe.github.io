@@ -6,7 +6,7 @@
 }
 
 :root{
-    --bg-color: #D8D8D8;
+    --bg-color: linear-gradient(45deg, #b3ecea, #3988e2);
 }
 
 body {
@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg-color);
+  background-image: var(--bg-color);
   font-family: 'Maitree', serif;
 }
 
@@ -53,13 +53,12 @@ a:hover{
 }
 
 .home-title span::before{
-    content: '';
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    background: var(--bg-color);
     animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
     transform: translateX(0);
 }
@@ -81,6 +80,7 @@ a:hover{
 .home-title span:nth-of-type(6)::before,
 .home-title span:nth-of-type(6)::after{
     animation: a-ltr-after-2 2s cubic-bezier(.77,0,.18,1) forwards;
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
     animation-delay: 1s;
 }
 
