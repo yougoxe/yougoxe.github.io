@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <title>CV de Maël Pineau</title>
     </head>
     <body>
@@ -54,7 +56,7 @@
                     <section class="home" id="home">
                         <div class="home__container section bd-grid">
                             <div class="home__data bd-grid">
-                                <img src="assets/img/profile.jpg" alt="" class="home__img">
+                                <img src="https://yougoxe.github.io/CV/assets/img/profile.jpg" alt="" class="home__img">
 
                                 <h1 class="home__title">Pineau <b>Maël</b></h1>
                                 <h3 class="home__profession">Alternant | Développeur</h3>
@@ -62,30 +64,36 @@
 
                             <div class="home__adress bd-grid">
                                 <span class="home__information">
-                                    <i class="bx bx-map home__icon"></i> 27 rue du chateau d'eau <br> Chavaroux 63720
+                                    <img class="home__icon" title="map" id="map" alt="map icon" src="https://yougoxe.github.io/CV/assets/img/map-regular-24.png" />
+                                     27 rue du chateau d'eau <br> Chavaroux 63720
                                 </span>
                                 <span class="home__information">
-                                    <i class="bx bx-envelope home__icon"></i> maelpineau.contactme@gmail.com
+                                    <img class="home__icon" title="envelope" id="envelope" alt="phone icon" src="https://yougoxe.github.io/CV/assets/img/envelope-regular-24.png" />
+                                    maelpineau.contactme@gmail.com
                                 </span>
                                 <span class="home__information">
-                                    <i class="bx bx-phone home__icon"></i> 07-78-39-25-95
+                                    <img class="home__icon" title="phone" id="phone" alt="phone icon" src="https://yougoxe.github.io/CV/assets/img/phone-regular-24.png" />
+                                    07-78-39-25-95
                                 </span>
 								<span class="home__information">
-                                    <i class='bx bx-id-card home__icon'></i> permis B
+                                    <img class="home__icon" title="id" id="id" alt="id icon" src="https://yougoxe.github.io/CV/assets/img/id-card-regular-24.png" />
+                                    permis B
                                 </span>
                             </div>
                         </div>
-                        <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                        <img class="change-theme" title="Theme" id="theme-button" alt="theme button" src="./assets/img/moon-regular-24.png" />
+                        <img class="change-theme2" title="Theme2" id="exportPdf" alt="download button" src="https://yougoxe.github.io/CV/assets/img/download-solid-24.png" />
                     </section>
                     <section class="social section">
                         <h2 class="section-title">SOCIAL</h2>
 
                         <div class="social__container bd-grid">
                             <a href="https://www.linkedin.com/in/ma%C3%ABl-pineau-3a7303224/" target="_blank" class="social__link">
-                                <i class="bx bxl-linkedin-square social__icon"></i> Maël Pineau
+                                <img class="social__icon" title="linkedin" id="linkedin" alt="linkedin icon" src="https://yougoxe.github.io/CV/assets/img/linkedin-square-logo-24.png" /> Maël Pineau
                             </a>
-                            <a href="https://github.com/mael-pineau" target="_blank" class="social__link">
-                                <i class="bx bxl-github social__icon"></i> mael-pineau
+                            <a href="https://github.com/yougoxe" target="_blank" class="social__link">
+                                <img class="social__icon" title="github" id="github" alt="github icon" src="https://yougoxe.github.io/CV/assets/img/github-logo-24.png" /> 
+                                yougoxe                                
                             </a>
                         </div>
                     </section>
@@ -232,19 +240,19 @@
                         <h2 class="section-title">hobbies</h2>
                         <div class="hobby__container bd-grid">
                             <div class="interests__content">
-                                <i class="bx bx-headphone interests__icon"></i>
+                                <img class="interests__icon" title="music" id="music" alt="icon" src="https://yougoxe.github.io/CV/assets/img/music-regular-24.png" />
                                 <span class="interests__name">Musique</span>
                             </div>
                             <div class="interests__content">
-                                <i class="bx bx-book interests__icon"></i>
+                                <img class="interests__icon" title="book" id="book" alt="icon" src="https://yougoxe.github.io/CV/assets/img/book-regular-24.png" />
                                 <span class="interests__name">Lecture</span>
                             </div>
                             <div class="interests__content">
-                                <i class='bx bx-trophy interests__icon'></i>
+                                <img class="interests__icon" title="sport" id="sport" alt="icon" src="https://yougoxe.github.io/CV/assets/img/trophy-regular-24.png" />
                                 <span class="interests__name ">Sport</span>
                             </div>
                             <div class="interests__content">
-                                <i class='bx bx-game interests__icon'></i>
+                                <img class="interests__icon" title="video game" id="videogame" alt="icon" src="https://yougoxe.github.io/CV/assets/img/game-regular-24.png" />
                                 <span class="interests__name">Jeux vidéo</span>
                             </div>
                         </div>

@@ -57,6 +57,15 @@ body.dark-theme{
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+.change-theme2{
+  position: absolute;
+  top: 4.4rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 .change-theme:hover{
   color: var(--title-color);
 }
@@ -218,6 +227,7 @@ img{
   justify-content: space-between;
   align-items: center;
 }
+
 @media screen and (max-width: 968px){
   .nav__menu{
     position: fixed;
@@ -521,5 +531,9 @@ img{
   .hobby__container{
     grid-template-columns: repeat(4,max-content);
     column-gap: 3.5rem;
+  }
+
+  .hidden{
+    visibility: hidden;
   }
 }
